@@ -32,6 +32,7 @@ requirements:
     - libraft-headers {{ minor_version }}
     - pyraft {{ minor_version }}
     - cudf={{ minor_version }}
+    - ucx >=1.12.1
     - ucx-py {{ ucx_py_version }}
     - ucx-proc=*=gpu
     - cudatoolkit {{ cuda_version }}.*
@@ -47,6 +48,7 @@ requirements:
     - dask-cuda {{ minor_version }}
     - dask>=2022.03.0
     - distributed>=2022.03.0
+    - ucx >=1.12.1
     - ucx-py {{ ucx_py_version }}
     - ucx-proc=*=gpu
     - {{ pin_compatible('cudatoolkit', max_pin='x', min_pin='x') }}
